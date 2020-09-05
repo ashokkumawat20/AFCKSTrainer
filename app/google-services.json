@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "420106684835",
+    "firebase_url": "https://afckstrainer-55ed6.firebaseio.com",
+    "project_id": "afckstrainer-55ed6",
+    "storage_bucket": "afckstrainer-55ed6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420106684835:android:26cd55b138437e3b",
+        "android_client_info": {
+          "package_name": "in.afckstechnologies.mail.afckstrainer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420106684835-8odimhvh8bvqpdr68htppp9pfc2qd8u7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.afckstechnologies.mail.afckstrainer",
+            "certificate_hash": "7fb70a54fde0c992770b58781a929184f8527b04"
+          }
+        },
+        {
+          "client_id": "420106684835-q8hlnhv43nbgid7bddi4d0l6l7nuu7ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC83CqNlniInHJF-WOC17W058i4RtoRP0c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420106684835-q8hlnhv43nbgid7bddi4d0l6l7nuu7ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

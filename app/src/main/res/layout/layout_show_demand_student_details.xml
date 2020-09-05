@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:id="@+id/layout_quotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#556199"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+
+                android:background="@android:color/transparent"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:text="001"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:paddingLeft="5dp"
+                android:text="Ashok"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/app_status"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".1"
+                android:src="@drawable/app_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/user_status"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".1"
+                android:src="@drawable/user_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/mobile_status"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".1"
+                android:src="@drawable/mobile_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:text="-"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:text="9657816221"
+                android:textColor="#31B946"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notesl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#556199"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:text="Todayswdewdffsfdfdssfdsfdsfdsfdsfdsfdsfdsfdsfdfdfsdfdsf"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/showBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#556199"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <CheckBox
+                android:id="@+id/chkSelected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:button="@drawable/custom_checkbox_design"
+                android:checked="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/callingButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:src="@drawable/call_icon" />
+
+            <ImageView
+                android:id="@+id/messageButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:src="@drawable/msg_icon" />
+
+            <ImageView
+                android:id="@+id/whatsappeButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:src="@drawable/whatsaap_img" />
+
+            <ImageView
+
+                android:id="@+id/commentButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:src="@drawable/c_icon" />
+
+            <ImageView
+                android:id="@+id/infoButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+
+                android:layout_weight="1"
+                android:src="@drawable/i_icon" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+

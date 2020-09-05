@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/orderedMenu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/title_font"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/dailog_backgrnd">
+
+                <LinearLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Batch details!!"
+                        android:textColor="#ffffff" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#ffffff" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/regScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title">
+
+                    <LinearLayout
+                        android:id="@+id/batchData"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalBatches"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:hint="TotalBatches"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+
+                        <TextView
+                            android:id="@+id/totalTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="2dp"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|left"
+                            android:hint="TotalTime"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+
+                        <TextView
+                            android:id="@+id/studentsInBatch"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="2dp"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|left"
+                            android:hint="StudentsInBatch"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+
+                        <TextView
+                            android:id="@+id/activeStudents"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="2dp"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|left"
+                            android:hint="ActiveStudents"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+
+                        <TextView
+                            android:id="@+id/discontinuedStudents"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="2dp"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|left"
+                            android:hint="DiscontinuedStudents"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+
+                        <TextView
+                            android:id="@+id/activePerc"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="2dp"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|left"
+                            android:hint="ActivePerc"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+
+                        <TextView
+                            android:id="@+id/presentPerc"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="2dp"
+
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|left"
+                            android:hint="PresentPerc"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/totalFees"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="2dp"
+                            android:background="#E0DADA"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|left"
+                            android:hint="TotalFees"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="6dp"
+                            android:singleLine="true"
+                            android:textColor="@color/textcolor"
+                            android:textColorHint="@color/color_faintgray" />
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

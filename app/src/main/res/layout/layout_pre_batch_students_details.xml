@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:id="@+id/lead_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_medium">
+
+        <LinearLayout
+            android:id="@+id/i_prebatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#556199"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/view_courses_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="left|center"
+                android:text=""
+                android:textColor="@color/back_c"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/view_batch_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:background="@android:color/transparent"
+                android:text="ewe"
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:text=":"
+                android:textColor="@color/back_c"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/view_course_frequency"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="wewee"
+                android:textColor="@color/text_c"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:text=":"
+                android:textColor="@color/back_c"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_fees"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="wewewew"
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:text=":"
+                android:textColor="@color/back_c"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_StartBatch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="q3q"
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidePreAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/preAttendance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/spacing_small"
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hidePreReason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+           android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/preReason"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/spacing_small"
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/basefees"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/feesmos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=":"
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/feesigst"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/feessgst"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/feescgst"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8"
+                android:text="Total Paid Fees"
+                android:textColor="#666A6D"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:text=":"
+                android:textColor="@color/back_c"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_PaidFees"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textColor="@color/text_c"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

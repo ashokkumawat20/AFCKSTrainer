@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:id="@+id/layout_quotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/clickLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#70AD47"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/batchCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:text="AKBA002"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:text="12th Jan 2017"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/days"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:text="Only Sat"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:text="1:00 to 5:30 PM"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/showLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/message"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/msg_icon"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/whatsapp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/whatsaap_img"
+                  />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+

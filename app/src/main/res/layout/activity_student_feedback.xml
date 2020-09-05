@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="in.afckstechnologies.mail.afckstrainer.Activity.StudentFeedbackActivity">
+
+    <!-- Header aligned to top -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_medium"
+            android:background="#223458"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/logoImg"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:layout_weight=".2"
+                android:background="@drawable/logo_afcks"
+                android:padding="5dp"
+                android:paddingBottom="@dimen/spacing_medium" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_weight=".8"
+                android:gravity="left|center|center_horizontal"
+                android:paddingLeft="@dimen/spacing_medium"
+                android:text="Students List"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/l1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_spinner_background"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/spinnerBranch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_spinner_background"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l2"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:background="@drawable/custom_spinner_background"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/spinnerdatePicker"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_spnner"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <CheckBox
+                android:id="@+id/chkAllSelected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@drawable/custom_checkbox_design"
+                android:gravity="center" />
+
+
+            <Button
+                android:id="@+id/sendData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:background="@color/bg_spnner"
+                android:gravity="center"
+                android:text="Next"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!-- Scrollable Item below header and above footer -->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/studentsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clipToPadding="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="50dp"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

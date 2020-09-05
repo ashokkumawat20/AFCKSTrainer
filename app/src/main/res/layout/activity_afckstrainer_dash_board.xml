@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="in.afckstechnologies.mail.afckstrainer.Activity.AFCKSTrainerDashBoardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_medium"
+            android:background="#223458"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/logoImg"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:layout_weight=".6"
+                android:background="@drawable/logo_afcks" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_weight="2"
+                android:gravity="left|center|center_horizontal"
+                android:paddingLeft="@dimen/spacing_medium"
+                android:text="@string/app_name"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settingimg"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight=".4"
+                android:background="@drawable/setting_icon" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.90"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/sv1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="false"
+                android:foregroundGravity="center|top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/show5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="#DCDFED"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeChangeUserPreferences"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:text="Change User Preferences"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/lead_card_view_RawLeads"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeEnterStudentDetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/lead_text_viewRawLeads"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Enter Students Details"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeAttendance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Attendance"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/showeEmployeeAttendance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Show Employee Attendance"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeRequestType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Request Tickets"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                       android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/penddingTicket"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="left"
+                                    android:text="My Tickets"
+                                    android:gravity="left"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/pendingTask"
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#FF0000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/MyNotification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".8"
+                                    android:layout_gravity="left"
+                                    android:text="My Notification"
+                                    android:gravity="left"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/pendingNotification"
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#FF0000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            android:layout_marginLeft="3dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeTemplates"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Templates"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            android:layout_marginLeft="3dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeBankingDetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Banking Receipt"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeFixedAssests"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Fixed Assets"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeViewAccessories"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="View Accessories"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                       android:visibility="gone"
+                        android:weightSum="1">
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeUserFeedbacks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".8"
+                                    android:gravity="left"
+                                    android:text="User Feedbacks"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/feedbackcount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_weight=".2"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeSendDetalis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="left"
+                                    android:text="Send Details"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeCampaignDetalis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="left"
+                                    android:text="Campaign Details"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeChangeUserReconciliation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+
+                                    android:text="Fees Reconciliation"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeCallList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight=".8"
+                                    android:gravity="left"
+                                    android:text="Callback"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/callbackcount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".2"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:layout_gravity="left"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeShowDemand"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="left"
+
+                                    android:text="Show Demand"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeBookingStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Booking By Batch"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/show8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeSendcall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Send Call"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/show14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/customer_card_view"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeStudentFeedback"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/customer_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Student Feedback"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/show19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/takeGetVerifyCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/takeGetVerifyCode1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="Get Verify Code"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/show23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/dashboard_card_color"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="10dp">
+                            <LinearLayout
+                                android:id="@+id/takeEnquiriesDetalis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_weight=".8"
+                                    android:gravity="left"
+                                    android:text="Enquiries Details"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/enquiriescount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".2"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:layout_gravity="left"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#666A6D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

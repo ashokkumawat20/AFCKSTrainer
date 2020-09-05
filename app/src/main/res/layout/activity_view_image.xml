@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="in.afckstechnologies.mail.afckstrainer.Activity.ViewImage">
+
+    <ImageView
+        android:id="@+id/full_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/close_img"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/imagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="12132323"
+        android:textSize="20dip"
+        android:visibility="gone" />
+
+</RelativeLayout>

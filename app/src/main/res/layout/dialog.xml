@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/commentEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0DADA"
+        android:gravity="top|left"
+        android:paddingLeft="6dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/centerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/coursesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/dialog_ok"
+        android:text="ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
